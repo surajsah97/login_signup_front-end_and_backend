@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <script>
+    function openNav() {
+      document.getElementById("slide").style.width = "200px";
+      document.getElementById("lis").style.visibility = "hidden";
+      document.getElementById("close").style.visibility = "visible";
+    }
+
+    function closeNav() {
+      document.getElementById("slide").style.width = "0";
+
+
+      document.getElementById("lis").style.visibility = "visible";
+      document.getElementById("close").style.visibility = "hidden";
+    }
+    function openform() {
+      document.getElementById("form").style.visibility = "visible";
+    }
+    function closeform() {
+      document.getElementById("form").style.visibility = "hidden";
+    }
+
+  </script>
+</head>
+
+<body>
+  <div id="head">
+    {{>navbar}}</div>
+
+  <div id="context">
+    <form action="/register" method="POST" id="details">
+      <h1>
+        <center> REGISTER</center>
+      </h1>
+      <span id="fname"> FIRST Name *<br><input type="text" name="firstname" id="nam" placeholder="FIRST Name" required></span>
+      <span id="lname"> LAST Name * <br><input type="text" name="lastname" id="nam" placeholder="LAST Name" required></span><br><br>
+      <span id="use"> USERNAME *<br><input type="email" name="username" class="usr" placeholder="USERNAME" required></span><br>
+      <span id="pass"> PASSWORD *<br> <input type="password" name="pass" class="pas" placeholder="PASSWORD" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required></span>
+      <span id="confpass">CONFIRM PASSWORD *<br><input type="password" name="conf_pass" class="pas" placeholder="CONFIRM PASSWORD" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required></span>
+      <br>
+      <span style="float: left; margin:0px 20px"><input type="checkbox" required> I agree to the <a href="#">Term &
+          condition</a></span>
+      <span id="sub"><a href="#"> <button type="submit" id="btn">REGISTER</button></a></span>
+      <span id="sub"> <button type="submit" id="btn">SIGN IN</button></span>
+
+         </form>
+  </div>
+  <br><br>
+  <div id="foot">
+    <span class="col1">
+      Products
+      <ul>
+        <li><a href="">Team</a></li>
+        <li><a href="">Talent</a></li>
+        <li><a href="">Advertisement</a></li>
+        <li><a href="">Enterprices</a></li>
+      </ul>
+    </span>
+    <span class="col1">
+      Products
+      <ul>
+        <li><a href="">Team</a></li>
+        <li><a href="">Talent</a></li>
+        <li><a href="">Advertisement</a></li>
+        <li><a href="">Enterprices</a></li>
+      </ul>
+    </span>
+    <span class="col1">
+      Products
+      <ul>
+        <li><a href="">Team</a></li>
+        <li><a href="">Talent</a></li>
+        <li><a href="">Advertisement</a></li>
+        <li><a href="">Enterprices</a></li>
+      </ul>
+
+    </span>
+    <span class="col1">
+      Products
+      <ul>
+        <li><a href="">Team</a></li>
+        <li><a href="">Talent</a></li>
+        <li><a href="">Advertisement</a></li>
+        <li><a href="">Enterprices</a></li>
+      </ul>
+    </span>
+    <span class="col1">
+      Products
+      <ul>
+        <li><a href="">Team</a></li>
+        <li><a href="">Talent</a></li>
+        <li><a href="">Advertisement</a></li>
+        <li><a href="">Enterprices</a></li>
+      </ul>
+    </span>
+  </div>
+</body>
+
+</html>

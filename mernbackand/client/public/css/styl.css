@@ -1,0 +1,196 @@
+*{
+    box-sizing: border-box;
+}
+
+html,body{
+    overflow: hidden;
+
+}
+#menu #list{
+display: inline-block;
+margin: 1rem;
+color: rgba(3, 3, 3, 0.116);
+}
+header{
+    position: fixed;
+    right: 0;
+    
+    
+}
+#headr{
+    
+    
+    display: inline-flex;
+    
+    
+    
+}
+.drop{
+    list-style-type:none ;
+    box-sizing: border-box;
+    position: relative;
+    margin: 0px;
+    padding-right: calc(15px + .7em + .7em);
+    
+    padding: 8px;
+    
+}
+
+#drp{
+    padding: 10px 25px;
+    margin: 20px;
+    color: white;
+    background-color:rgba(94, 54, 6, 0.863);
+    display: block;
+    border: 0;
+}
+.opt{
+    position:absolute;
+    list-style-type: none;
+    right: 0;
+    left: 0;
+    padding: 0;
+    margin: 0;
+    top: 100%;
+    border:  solid #cdcdcd;
+    background-color: white;
+    box-sizing: border-box;
+    font-size: medium;
+    visibility: hidden;
+    transition: 0.5ms;
+}
+.opt li a{
+    text-decoration: none;
+    color: #000;
+}
+
+.drf{
+    display: block;
+    margin: 5px 15px;
+    border: 0.0001px black solid;
+    height: 0px;
+    width: 18px;
+    background-color: black;
+}
+#lis{
+    display: block;
+    background-color: rgba(255, 235, 205, 0);
+    outline: 0px;
+    border: 0;
+    cursor: pointer;
+}
+#menu #list a{
+    color: rgba(0, 0, 0, 0.733);
+    font-size: small;
+    font-weight: small;
+    text-decoration: none;
+    transition: 0.2s;
+}
+.opt li{
+    margin-top: 8px;
+}
+
+
+#sign {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: 2px;
+    vertical-align: middle;
+    border-top: 4px dashed;
+    border-top: 4px solid \9;
+    border-right: 6px solid transparent;
+    border-left: 5px solid transparent;
+    color: rgba(240, 255, 255, 0.952);
+}
+.drop:hover .opt{
+    visibility:visible;
+    border:1px solid #cdcdcd;
+
+
+
+}
+.listt{
+margin: 1.3em 0.2em 1.5em 0.2em ;
+
+}
+.listt:hover{
+    background-color: #cdcdcd;
+}
+.opt li:hover{
+    background-color: #cdcdcd;
+    padding: 0;
+    margin: 0;
+    padding: 5px;
+}
+#menu #list a:hover{
+    color: #000;
+    text-decoration: 2px rgb(41, 17, 17) underline ;
+}
+#slide{
+    background-color: white;
+    border:0px white solid;
+    float: right;
+    
+    width: 0;
+    height: 655px;
+    
+}
+#slide #slidemenu li{
+    display: block;
+    padding: 10px ;
+    margin: 0px 10px 0px 0px;
+    text-align: center;
+    list-style-type: none;
+    color: rgb(44, 21, 5);
+}
+#slide #slidemenu li a{
+    text-decoration: none;
+    color:rgb(46, 18, 18);
+}
+#close{
+
+  top: 0;
+  visibility:hidden;
+  font-size: 36px;
+  outline: 0;
+  margin: 20px 40px 0px 5px;
+  cursor: pointer;
+
+}
+#form-box{position: relative;
+}
+#form{
+    position:absolute;
+    border:2px rgb(175, 79, 11) solid;
+    padding: 10px 20px 100px 20px;
+    top: 55px;   
+    background-color:white;
+    visibility: hidden;
+}
+.slidebaar{
+    background-image: url("https://www.tajhotels.co.uk/wp-content/uploads/2017/10/banner-3.jpg");
+    height: 100%;
+    width: 100%;
+    border: 2px rgb(10, 177, 243) solid;
+    
+}
+#sun{
+    margin-top: 385px;
+    background-color: white;
+    width: 1000px;
+    margin-left:9em ;
+}
+#sll{
+    height: 4em;
+    font-size: larger;
+    font-weight: bold;
+    width: 40em;
+
+}
+#btn{
+    height: 4em;
+}
+#nav{
+    height: 100px;
+}
