@@ -8,13 +8,13 @@ const knex = require('knex')({
     }
 })
 
-knex.schema.createTable('users_data', function (table) {
+knex.schema.createTable('user_databoxs', function (table) {
     table.increments('id').primary().unique();
     table.string('firstname').notNullable();
     table.string('lastname').notNullable();
     table.string('username').notNullable();
     table.string('password').notNullable();
-    table.string('confirm_password').notNullable();
+  
   }).then((data)=>{
       console.log("successfull created table");
   }).catch((err)=>{
